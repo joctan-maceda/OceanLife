@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OceanLife Explorer</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- HowlerJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-b from-sky-300 to-blue-900 min-h-screen text-white">
+
+  <!-- Barra lateral de profundidad -->
+  <div class="depth-bar fixed left-0 top-0 h-full w-12 bg-gradient-to-b from-sky-200 to-blue-900 flex flex-col justify-between items-center py-4 shadow-lg">
+    <span class="text-xs font-bold">0m</span>
+    <span class="text-xs font-bold">200m</span>
+    <span class="text-xs font-bold">1000m</span>
+    <span class="text-xs font-bold">4000m</span>
+    <span class="text-xs font-bold">11000m</span>
+  </div>
+
+  <!-- Contenido -->
+  <main class="ml-14 p-4 space-y-6" id="cards-container">
+    <!-- Las tarjetas se agregarán dinámicamente -->
+  </main>
+
+  <script src="app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

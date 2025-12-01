@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "Delfín nariz de botella",
+    "descripcion": "Mamífero inteligente que habita cerca de la superficie.",
+    "profundidad": 20,
+    "imagen": "assets/img/delfin.jpg",
+    "audio": "assets/audio/delfin.mp3"
+  },
+  {
+    "nombre": "Tiburón blanco",
+    "descripcion": "Depredador poderoso que habita en aguas medias.",
+    "profundidad": 200,
+    "imagen": "assets/img/tiburon.jpg",
+    "audio": "assets/audio/tiburon.mp3"
+  },
+  {
+    "nombre": "Calamar gigante",
+    "descripcion": "Criatura misteriosa del océano profundo.",
+    "profundidad": 1000,
+    "imagen": "assets/img/calamar.jpg",
+    "audio": "assets/audio/calamar.mp3"
+  }
+]
