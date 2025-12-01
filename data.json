@@ -4,7 +4,8 @@
     "descripcion": "Mamífero inteligente que habita cerca de la superficie.",
     "profundidad": 20,
     "imagen": "assets/img/delfin.jpg",
-    "audio": "assets/audio/delfin.mp3"
+    "audio": "assets/audio/delfin.mp3",
+    "modelo": "assets/models/delfin.glb"
   },
   {
     "nombre": "Tiburón blanco",
@@ -18,6 +19,399 @@
     "descripcion": "Criatura misteriosa del océano profundo.",
     "profundidad": 1000,
     "imagen": "assets/img/calamar.jpg",
-    "audio": "assets/audio/calamar.mp3"
-  }
+    "audio": "assets/audio/calamar.mp3",
+    "modelo": "assets/models/coral.glb"
+  },
+  {
+      "nombre": "Calamar gigante",
+      "descripcion": "Criatura misteriosa del océano profundo.",
+      "profundidad": 1000,
+      "imagen": "assets/img/calamar_gigante.jpg",
+      "audio": "assets/audio/calamar_gigante.mp3",
+      "modelo": "assets/models/calamar.glb"
+    },
+    {
+      "nombre": "Pez payaso",
+      "descripcion": "Famoso pez naranja con rayas blancas que vive en anémonas.",
+      "profundidad": 15,
+      "imagen": "assets/img/pez_payaso.jpg",
+      "audio": "assets/audio/pez_payaso.mp3",
+      "modelo": "assets/models/pez_payaso.glb"
+    },
+    {
+      "nombre": "Tortuga marina verde",
+      "descripcion": "Uno de los reptiles marinos más antiguos del planeta.",
+      "profundidad": 30,
+      "imagen": "assets/img/tortuga_verde.jpg",
+      "audio": "assets/audio/tortuga_verde.mp3",
+      "modelo": "assets/models/tortuga_verde.glb"
+    },
+    {
+      "nombre": "Tiburón blanco",
+      "descripcion": "Depredador apex conocido por su velocidad y fuerza.",
+      "profundidad": 200,
+      "imagen": "assets/img/tiburon_blanco.jpg",
+      "audio": "assets/audio/tiburon_blanco.mp3",
+      "modelo": "assets/models/tiburon_blanco.glb"
+    },
+    {
+      "nombre": "Medusa luna",
+      "descripcion": "Medusa inofensiva con apariencia transparente y luminosa.",
+      "profundidad": 40,
+      "imagen": "assets/img/medusa_luna.jpg",
+      "audio": "assets/audio/medusa_luna.mp3",
+      "modelo": "assets/models/medusa_luna.glb"
+    },
+    {
+      "nombre": "Pez ángel emperador",
+      "descripcion": "Colorido pez tropical que habita arrecifes coralinos.",
+      "profundidad": 20,
+      "imagen": "assets/img/pez_angel.jpg",
+      "audio": "assets/audio/pez_angel.mp3",
+      "modelo": "assets/models/pez_angel.glb"
+    },
+    {
+      "nombre": "Ballena azul",
+      "descripcion": "El animal más grande que ha existido.",
+      "profundidad": 500,
+      "imagen": "assets/img/ballena_azul.jpg",
+      "audio": "assets/audio/ballena_azul.mp3",
+      "modelo": "assets/models/ballena_azul.glb"
+    },
+    {
+      "nombre": "Delfín nariz de botella",
+      "descripcion": "Mamífero inteligente conocido por su comportamiento amistoso.",
+      "profundidad": 50,
+      "imagen": "assets/img/delfin.jpg",
+      "audio": "assets/audio/delfin.mp3",
+      "modelo": "assets/models/delfin.glb"
+    },
+    {
+      "nombre": "Pulpo común",
+      "descripcion": "Criatura inteligente capaz de escapar de casi cualquier lugar.",
+      "profundidad": 100,
+      "imagen": "assets/img/pulpo.jpg",
+      "audio": "assets/audio/pulpo.mp3",
+      "modelo": "assets/models/pulpo.glb"
+    },
+    {
+      "nombre": "Caballito de mar",
+      "descripcion": "Pez con forma de caballo conocido por sus curiosos desplazamientos.",
+      "profundidad": 10,
+      "imagen": "assets/img/caballito_mar.jpg",
+      "audio": "assets/audio/caballito_mar.mp3",
+      "modelo": "assets/models/caballito_mar.glb"
+    },
+    {
+      "nombre": "Manta raya gigante",
+      "descripcion": "Majestuosa criatura que parece volar bajo el agua.",
+      "profundidad": 150,
+      "imagen": "assets/img/manta_raya.jpg",
+      "audio": "assets/audio/manta_raya.mp3",
+      "modelo": "assets/models/manta_raya.glb"
+    },
+    {
+      "nombre": "Pez león",
+      "descripcion": "Pez venenoso con aletas vistosas y coloridas.",
+      "profundidad": 25,
+      "imagen": "assets/img/pez_leon.jpg",
+      "audio": "assets/audio/pez_leon.mp3",
+      "modelo": "assets/models/pez_leon.glb"
+    },
+    {
+      "nombre": "Tiburón martillo",
+      "descripcion": "Tiburón con cabeza en forma de martillo y excelente visión.",
+      "profundidad": 250,
+      "imagen": "assets/img/tiburon_martillo.jpg",
+      "audio": "assets/audio/tiburon_martillo.mp3",
+      "modelo": "assets/models/tiburon_martillo.glb"
+    },
+    {
+      "nombre": "Narval",
+      "descripcion": "Conocido como el unicornio del mar debido a su largo colmillo.",
+      "profundidad": 400,
+      "imagen": "assets/img/narval.jpg",
+      "audio": "assets/audio/narval.mp3",
+      "modelo": "assets/models/narval.glb"
+    },
+    {
+      "nombre": "Pez loro",
+      "descripcion": "Pez de colores brillantes que muerde coral.",
+      "profundidad": 10,
+      "imagen": "assets/img/pez_loro.jpg",
+      "audio": "assets/audio/pez_loro.mp3",
+      "modelo": "assets/models/pez_loro.glb"
+    },
+    {
+      "nombre": "Medusa melena de león",
+      "descripcion": "La medusa más grande del mundo.",
+      "profundidad": 200,
+      "imagen": "assets/img/medusa_leon.jpg",
+      "audio": "assets/audio/medusa_leon.mp3",
+      "modelo": "assets/models/medusa_leon.glb"
+    },
+    {
+      "nombre": "Pez abisal",
+      "descripcion": "Pez del fondo del mar con bioluminiscencia.",
+      "profundidad": 3000,
+      "imagen": "assets/img/pez_abisal.jpg",
+      "audio": "assets/audio/pez_abisal.mp3",
+      "modelo": "assets/models/pez_abisal.glb"
+    },
+    {
+      "nombre": "Pez linterna",
+      "descripcion": "Ilumina la oscuridad con luz bioluminiscente.",
+      "profundidad": 1500,
+      "imagen": "assets/img/pez_linterna.jpg",
+      "audio": "assets/audio/pez_linterna.mp3",
+      "modelo": "assets/models/pez_linterna.glb"
+    },
+    {
+      "nombre": "Cangrejo araña gigante",
+      "descripcion": "El artrópodo marino más grande del mundo.",
+      "profundidad": 600,
+      "imagen": "assets/img/cangrejo_gigante.jpg",
+      "audio": "assets/audio/cangrejo_gigante.mp3",
+      "modelo": "assets/models/cangrejo_gigante.glb"
+    },
+    {
+      "nombre": "Caracol cono",
+      "descripcion": "Molusco con veneno extremadamente poderoso.",
+      "profundidad": 15,
+      "imagen": "assets/img/caracol_cono.jpg",
+      "audio": "assets/audio/caracol_cono.mp3",
+      "modelo": "assets/models/caracol_cono.glb"
+    },
+    {
+      "nombre": "Erizo de mar púrpura",
+      "descripcion": "Erizo que habita en zonas poco profundas.",
+      "profundidad": 5,
+      "imagen": "assets/img/erizo_purpura.jpg",
+      "audio": "assets/audio/erizo_purpura.mp3",
+      "modelo": "assets/models/erizo.glb"
+    },
+    {
+      "nombre": "Pepino de mar",
+      "descripcion": "Animal blando del fondo marino.",
+      "profundidad": 100,
+      "imagen": "assets/img/pepino_mar.jpg",
+      "audio": "assets/audio/pepino_mar.mp3",
+      "modelo": "assets/models/pepino_mar.glb"
+    },
+    {
+      "nombre": "Atún aleta azul",
+      "descripcion": "Pez rápido y migratorio.",
+      "profundidad": 200,
+      "imagen": "assets/img/atun.jpg",
+      "audio": "assets/audio/atun.mp3",
+      "modelo": "assets/models/atun.glb"
+    },
+    {
+      "nombre": "Pez globo",
+      "descripcion": "Pez que se infla para defenderse.",
+      "profundidad": 30,
+      "imagen": "assets/img/pez_globo.jpg",
+      "audio": "assets/audio/pez_globo.mp3",
+      "modelo": "assets/models/pez_globo.glb"
+    },
+    {
+      "nombre": "León marino",
+      "descripcion": "Mamífero social y juguetón.",
+      "profundidad": 20,
+      "imagen": "assets/img/leon_marino.jpg",
+      "audio": "assets/audio/leon_marino.mp3",
+      "modelo": "assets/models/leon_marino.glb"
+    },
+    {
+      "nombre": "Foca monje",
+      "descripcion": "Una de las focas más raras del mundo.",
+      "profundidad": 50,
+      "imagen": "assets/img/foca_monje.jpg",
+      "audio": "assets/audio/foca_monje.mp3",
+      "modelo": "assets/models/foca_monje.glb"
+    },
+    {
+      "nombre": "Tiburón duende",
+      "descripcion": "Tiburón de aguas profundas con mandíbula extensible.",
+      "profundidad": 1200,
+      "imagen": "assets/img/tiburon_duende.jpg",
+      "audio": "assets/audio/tiburon_duende.mp3",
+      "modelo": "assets/models/tiburon_duende.glb"
+    },
+    {
+      "nombre": "Pez remo",
+      "descripcion": "Pez largo y delgado considerado origen de leyendas.",
+      "profundidad": 800,
+      "imagen": "assets/img/pez_remo.jpg",
+      "audio": "assets/audio/pez_remo.mp3",
+      "modelo": "assets/models/pez_remo.glb"
+    },
+    {
+      "nombre": "Calamar vampiro",
+      "descripcion": "Calamar de aguas profundas con tentáculos bioluminiscentes.",
+      "profundidad": 900,
+      "imagen": "assets/img/calamar_vampiro.jpg",
+      "audio": "assets/audio/calamar_vampiro.mp3",
+      "modelo": "assets/models/calamar_vampiro.glb"
+    },
+    {
+      "nombre": "Anémona marina",
+      "descripcion": "Animal con tentáculos que vive en rocas y corales.",
+      "profundidad": 5,
+      "imagen": "assets/img/anemona.jpg",
+      "audio": "assets/audio/anemona.mp3",
+      "modelo": "assets/models/anemona.glb"
+    },
+    {
+      "nombre": "Coral cerebro",
+      "descripcion": "Coral con patrones que parecen un cerebro.",
+      "profundidad": 15,
+      "imagen": "assets/img/coral_cerebro.jpg",
+      "audio": "assets/audio/coral_cerebro.mp3",
+      "modelo": "assets/models/coral_cerebro.glb"
+    },
+    {
+      "nombre": "Pez cirujano azul",
+      "descripcion": "Pez azul con aleta amarilla, muy popular.",
+      "profundidad": 20,
+      "imagen": "assets/img/pez_cirujano.jpg",
+      "audio": "assets/audio/pez_cirujano.mp3",
+      "modelo": "assets/models/pez_cirujano.glb"
+    },
+    {
+      "nombre": "Beluga",
+      "descripcion": "Ballena blanca muy vocal.",
+      "profundidad": 300,
+      "imagen": "assets/img/beluga.jpg",
+      "audio": "assets/audio/beluga.mp3",
+      "modelo": "assets/models/beluga.glb"
+    },
+    {
+      "nombre": "Foca anillada",
+      "descripcion": "Pequeña foca del Ártico.",
+      "profundidad": 100,
+      "imagen": "assets/img/foca_anillada.jpg",
+      "audio": "assets/audio/foca_anillada.mp3",
+      "modelo": "assets/models/foca_anillada.glb"
+    },
+    {
+      "nombre": "Cachalote",
+      "descripcion": "Ballena dentada famosa por su enorme cabeza.",
+      "profundidad": 4000,
+      "imagen": "assets/img/cachalote.jpg",
+      "audio": "assets/audio/cachalote.mp3",
+      "modelo": "assets/models/cachalote.glb"
+    },
+    {
+      "nombre": "Pez espada",
+      "descripcion": "Pez rápido con largo pico.",
+      "profundidad": 400,
+      "imagen": "assets/img/pez_espada.jpg",
+      "audio": "assets/audio/pez_espada.mp3",
+      "modelo": "assets/models/pez_espada.glb"
+    },
+    {
+      "nombre": "Langosta roja",
+      "descripcion": "Crustáceo valioso y de gran tamaño.",
+      "profundidad": 50,
+      "imagen": "assets/img/langosta.jpg",
+      "audio": "assets/audio/langosta.mp3",
+      "modelo": "assets/models/langosta.glb"
+    },
+    {
+      "nombre": "Pez cofre",
+      "descripcion": "Pez cuadrado con colores llamativos.",
+      "profundidad": 10,
+      "imagen": "assets/img/pez_cofre.jpg",
+      "audio": "assets/audio/pez_cofre.mp3",
+      "modelo": "assets/models/pez_cofre.glb"
+    },
+    {
+      "nombre": "Foca leopardo",
+      "descripcion": "Depredador ágil y agresivo de zonas árticas.",
+      "profundidad": 150,
+      "imagen": "assets/img/foca_leopardo.jpg",
+      "audio": "assets/audio/foca_leopardo.mp3",
+      "modelo": "assets/models/foca_leopardo.glb"
+    },
+    {
+      "nombre": "Tiburón azul",
+      "descripcion": "Elegante tiburón de color azul metálico.",
+      "profundidad": 350,
+      "imagen": "assets/img/tiburon_azul.jpg",
+      "audio": "assets/audio/tiburon_azul.mp3",
+      "modelo": "assets/models/tiburon_azul.glb"
+    },
+    {
+      "nombre": "Pez murciélago",
+      "descripcion": "Pez extraño con forma triangular.",
+      "profundidad": 200,
+      "imagen": "assets/img/pez_murcielago.jpg",
+      "audio": "assets/audio/pez_murcielago.mp3",
+      "modelo": "assets/models/pez_murcielago.glb"
+    },
+    {
+      "nombre": "Pez halcón",
+      "descripcion": "Pequeño pez de arrecife que ‘se posa’ en rocas.",
+      "profundidad": 10,
+      "imagen": "assets/img/pez_halcon.jpg",
+      "audio": "assets/audio/pez_halcon.mp3",
+      "modelo": "assets/models/pez_halcon.glb"
+    },
+    {
+      "nombre": "Camarón mantis",
+      "descripcion": "Crustáceo con uno de los golpes más rápidos del mundo.",
+      "profundidad": 30,
+      "imagen": "assets/img/camaron_mantis.jpg",
+      "audio": "assets/audio/camaron_mantis.mp3",
+      "modelo": "assets/models/camaron_mantis.glb"
+    },
+    {
+      "nombre": "Pez dragón negro",
+      "descripcion": "Pez abisal con bioluminiscencia roja.",
+      "profundidad": 1500,
+      "imagen": "assets/img/pez_dragon.jpg",
+      "audio": "assets/audio/pez_dragon.mp3",
+      "modelo": "assets/models/pez_dragon.glb"
+    },
+    {
+      "nombre": "Anguila jardinera",
+      "descripcion": "Anguilas que asoman como plantas desde la arena.",
+      "profundidad": 25,
+      "imagen": "assets/img/anguila_jardinera.jpg",
+      "audio": "assets/audio/anguila_jardinera.mp3",
+      "modelo": "assets/models/anguila_jardinera.glb"
+    },
+    {
+      "nombre": "Pez borrón",
+      "descripcion": "Animal gelatinoso del fondo marino.",
+      "profundidad": 1200,
+      "imagen": "assets/img/pez_borron.jpg",
+      "audio": "assets/audio/pez_borron.mp3",
+      "modelo": "assets/models/pez_borron.glb"
+    },
+    {
+      "nombre": "Cangrejo ermitaño",
+      "descripcion": "Cangrejo que vive dentro de conchas vacías.",
+      "profundidad": 15,
+      "imagen": "assets/img/cangrejo_ermitano.jpg",
+      "audio": "assets/audio/cangrejo_ermitano.mp3",
+      "modelo": "assets/models/cangrejo_ermitano.glb"
+    },
+    {
+      "nombre": "Pez fantasma",
+      "descripcion": "Translúcido y prácticamente invisible.",
+      "profundidad": 900,
+      "imagen": "assets/img/pez_fantasma.jpg",
+      "audio": "assets/audio/pez_fantasma.mp3",
+      "modelo": "assets/models/pez_fantasma.glb"
+    },
+    {
+      "nombre": "Pez mariposa",
+      "descripcion": "Colorido y pequeño, común en arrecifes.",
+      "profundidad": 10,
+      "imagen": "assets/img/pez_mariposa.jpg",
+      "audio": "assets/audio/pez_mariposa.mp3",
+      "modelo": "assets/models/pez_mariposa.glb"
+    }
 ]

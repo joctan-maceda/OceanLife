@@ -5,39 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OceanLife Explorer</title>
 
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- AOS Animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- HowlerJS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gradient-to-b from-sky-300 to-blue-900 min-h-screen text-white">
+<body class="text-white">
 
-  <!-- Barra lateral de profundidad -->
-  <div class="depth-bar fixed left-0 top-0 h-full w-12 bg-gradient-to-b from-sky-200 to-blue-900 flex flex-col justify-between items-center py-4 shadow-lg">
-    <span class="text-xs font-bold">0m</span>
-    <span class="text-xs font-bold">200m</span>
-    <span class="text-xs font-bold">1000m</span>
-    <span class="text-xs font-bold">4000m</span>
-    <span class="text-xs font-bold">11000m</span>
+  <!-- Fondo animado -->
+  <div class="ocean-bg"></div>
+  <div class="ocean-layer">
+   <img src="assets/decor/coral1.png" class="coral coral-left">
+</div>
+
+
+  <!-- Barra lateral -->
+  <div class="depth-bar fixed left-0 top-0 h-full w-14 
+      bg-gradient-to-b from-sky-300 to-blue-900
+      flex flex-col justify-between items-center py-4 z-20 shadow-xl cursor-pointer">
+
+    <span class="depth-option text-xs font-bold hover:scale-110" data-depth="0">0m</span>
+    <span class="depth-option text-xs font-bold hover:scale-110" data-depth="200">200m</span>
+    <span class="depth-option text-xs font-bold hover:scale-110" data-depth="1000">1000m</span>
+    <span class="depth-option text-xs font-bold hover:scale-110" data-depth="4000">4000m</span>
+    <span class="depth-option text-xs font-bold hover:scale-110" data-depth="11000">11000m</span>
   </div>
 
-  <!-- Contenido -->
-  <main class="ml-14 p-4 space-y-6" id="cards-container">
-    <!-- Las tarjetas se agregarán dinámicamente -->
+  <!-- Contenedor central -->
+  <main class="ml-20 flex flex-col justify-center items-center h-screen relative z-10">
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar animal marino...">
+    </div>
+
+
+    <!-- Tarjeta -->
+    <div id="card" class="card w-80 p-4 shadow-lg text-center relative">
+      <!-- dinámico -->
+    </div>
+
+    <div id="modal3D" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="close3D()">&times;</span>
+              <model-viewer id="viewer" src="" auto-rotate camera-controls></model-viewer>
+          </div>
+      </div>
+
+    <!-- Flechas -->
+    <div class="flex justify-between w-80 mt-4">
+      <button id="prevBtn" class="nav-btn">&larr; Anterior</button>
+      <button id="nextBtn" class="nav-btn">Siguiente &rarr;</button>
+    </div>
+
   </main>
 
   <script src="app.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
 </body>
 </html>

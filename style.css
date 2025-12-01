@@ -1,10 +1,151 @@
 body {
-  transition: background 0.3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
-  border-radius: 12px;
-  padding: 16px;
+/* ----------------------------- */
+/*   FONDOS ANIMADOS             */
+/* ----------------------------- */
+
+/* 1) FONDO SUPERFICIAL – LUZ Y ONDAS */
+.ocean-surface {
+  background: linear-gradient(#4ecbff, #0066cc);
+  animation: surfaceWaves 6s ease-in-out infinite alternate;
 }
+
+@keyframes surfaceWaves {
+  0% { filter: brightness(1); background-position: 0 0; }
+  100% { filter: brightness(1.2); background-position: 0 40%; }
+}
+
+/* 2) FONDO MESOPÉLAGICO – BURBUJAS */
+.ocean-mid {
+  background: linear-gradient(#003f7d, #001a33);
+  overflow: hidden;
+}
+
+.ocean-mid::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.2) 2px, transparent 2px);
+  background-size: 40px 40px;
+  animation: bubblesUp 14s infinite linear;
+}
+
+@keyframes bubblesUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+/* 3) FONDO PROFUNDO – CORRIENTES HORIZONTALES */
+.ocean-deep {
+  background: radial-gradient(circle at center, #001428, #000814);
+}
+
+.ocean-deep::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 40, 80, 0.2) 0%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 40, 80, 0.2) 100%
+  );
+  animation: deepCurrents 20s linear infinite;
+}
+
+@keyframes deepCurrents {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* 4) FONDO ABISAL – PARTÍCULAS */
+.ocean-abyss {
+  background: #000a14;
+}
+
+.ocean-abyss::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: particlesDrift 18s easy infinite alternate;
+}
+
+@keyframes particlesDrift {
+  0% { transform: translate(-5%, -5%); opacity: 0.3; }
+  100% { transform: translate(5%, 5%); opacity: 0.15; }
+}
+
+
+/* ----------------------------- */
+/* TARJETA                      */
+/* ----------------------------- */
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  transition: transform 0.7s ease;
+}
+
+.nav-btn {
+  background: rgba(255,255,255,0.15);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* ------------------- */
+/*  Coral   */
+
+.coral {
+  position: absolute;
+  width: 180px;
+  bottom: 0;
+  animation: sway 5s ease-in-out infinite alternate;
+  opacity: 0.7;
+}
+
+@keyframes sway {
+  0%  { transform: rotate(0deg); }
+  100% { transform: rotate(8deg); }
+}
+
+
+ .modal {
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.85);
+      display:none;
+      justify-content:center;
+      align-items:center;
+      z-index:10;
+  }
+
+  .modal-content {
+      width:90%;
+      max-width:500px;
+      background:#002244;
+      padding:20px;
+      border-radius:12px;
+  }
+
+  .close { float:right; cursor:pointer; font-size:20px; }
+
+  model-viewer { width:100%; height:400px; }
+
