@@ -39,8 +39,8 @@ function showCard(index) {
       <h2 class="text-2xl font-bold mb-1">${a.nombre}</h2>
       <p class="text-sm mb-2">${a.descripcion}</p>
       <p class="text-xs opacity-70 mb-3">Profundidad: ${a.profundidad}m</p>
-      <button class="btn" onclick="open3D('${a.modelo}')">Ver modelo 3D</button>
-      <button class="btn" onclick="openAR('${a.modelo}')">Ver en AR</button>
+      <button class="nav-btn" onclick="open3D('${a.modelo}')">Ver modelo 3D</button>
+      <button class="nav-btn" onclick="openAR('${a.modelo}')">Ver en AR</button>
       <button id="playSound" class="nav-btn text-sm px-4 py-2">🔊 Reproducir sonido</button>
     `;
 

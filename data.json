@@ -23,12 +23,28 @@
     "modelo": "assets/models/coral.glb"
   },
   {
-      "nombre": "Calamar gigante",
-      "descripcion": "Criatura misteriosa del océano profundo.",
-      "profundidad": 1000,
-      "imagen": "assets/img/calamar_gigante.jpg",
-      "audio": "assets/audio/calamar_gigante.mp3",
-      "modelo": "assets/models/calamar.glb"
+      "nombre": "Tiburón martillo",
+      "descripcion": "Tiburón con cabeza en forma de martillo y excelente visión.",
+      "profundidad": 250,
+      "imagen": "assets/img/tiburon_martillo.jpg",
+      "audio": "assets/audio/tiburon_martillo.mp3",
+      "modelo": "assets/models/tiburonmartillo.glb"
+    },
+  {
+      "nombre": "Pez Luna",
+      "descripcion": "Pez enorme un poco torpe.",
+      "profundidad": 10,
+      "imagen": "assets/img/pezluna.jpg",
+      "audio": "assets/audio/pezluna.mp3",
+      "modelo": "assets/models/pezluna.glb"
+    },
+    {
+      "nombre": "Pez ángel emperador",
+      "descripcion": "Colorido pez tropical que habita arrecifes coralinos.",
+      "profundidad": 20,
+      "imagen": "assets/img/pez_angel.jpg",
+      "audio": "assets/audio/pez_angel.mp3",
+      "modelo": "assets/models/pez_angel.glb"
     },
     {
       "nombre": "Pez payaso",
@@ -62,14 +78,7 @@
       "audio": "assets/audio/medusa_luna.mp3",
       "modelo": "assets/models/medusa_luna.glb"
     },
-    {
-      "nombre": "Pez ángel emperador",
-      "descripcion": "Colorido pez tropical que habita arrecifes coralinos.",
-      "profundidad": 20,
-      "imagen": "assets/img/pez_angel.jpg",
-      "audio": "assets/audio/pez_angel.mp3",
-      "modelo": "assets/models/pez_angel.glb"
-    },
+    
     {
       "nombre": "Ballena azul",
       "descripcion": "El animal más grande que ha existido.",
@@ -118,14 +127,7 @@
       "audio": "assets/audio/pez_leon.mp3",
       "modelo": "assets/models/pez_leon.glb"
     },
-    {
-      "nombre": "Tiburón martillo",
-      "descripcion": "Tiburón con cabeza en forma de martillo y excelente visión.",
-      "profundidad": 250,
-      "imagen": "assets/img/tiburon_martillo.jpg",
-      "audio": "assets/audio/tiburon_martillo.mp3",
-      "modelo": "assets/models/tiburon_martillo.glb"
-    },
+    
     {
       "nombre": "Narval",
       "descripcion": "Conocido como el unicornio del mar debido a su largo colmillo.",
