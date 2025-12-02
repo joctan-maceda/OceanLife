@@ -33,11 +33,18 @@ body {
 /* ----------------------------- */
 /*   FONDOS ANIMADOS             */
 /* ----------------------------- */
+/* CSS actualizado para incluir burbujas ascendentes en ocean-surface */
 
-/* 1) FONDO SUPERFICIAL – LUZ Y ONDAS */
+/* ----------------------------- */
+/*   FONDOS ANIMADOS             */
+/* ----------------------------- */
+
+/* 1) FONDO SUPERFICIAL – LUZ Y ONDAS CON BURBUJAS ASCENDENTES */
 .ocean-surface {
   background: linear-gradient(#286985, #0066cc);
   animation: surfaceWaves 3s ease-in-out infinite alternate;
+  position: relative;
+  overflow: hidden;
 }
 
 @keyframes surfaceWaves {
@@ -45,10 +52,83 @@ body {
   100% { filter: brightness(1.2); background-position: 0 40%; }
 }
 
-/* 2) FONDO MESOPÉLAGICO – BURBUJAS */
+/* Burbujas ascendentes para el fondo superficial */
+.ocean-surface::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.8) 2px, transparent 3px),
+    radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.6) 3px, transparent 4px),
+    radial-gradient(circle at 60% 50%, rgba(255, 255, 255, 0.7) 4px, transparent 5px),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.5) 2px, transparent 3px),
+    radial-gradient(circle at 10% 60%, rgba(255, 255, 255, 0.9) 3px, transparent 4px),
+    radial-gradient(circle at 90% 70%, rgba(255, 255, 255, 0.6) 2px, transparent 3px),
+    radial-gradient(circle at 30% 10%, rgba(255, 255, 255, 0.7) 4px, transparent 5px),
+    radial-gradient(circle at 70% 90%, rgba(255, 255, 255, 0.8) 3px, transparent 4px);
+  background-size: 300px 300px;
+  animation: bubblesAscend 15s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes bubblesAscend {
+  0% {
+    transform: translateY(100%);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0.4;
+  }
+}
+
+/* Capa adicional de burbujas más pequeñas para mayor profundidad */
+.ocean-surface::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 0;
+  left: 0;
+  background-image: 
+    radial-gradient(circle at 15% 40%, rgba(255, 255, 255, 0.4) 1px, transparent 2px),
+    radial-gradient(circle at 55% 65%, rgba(255, 255, 255, 0.3) 1px, transparent 2px),
+    radial-gradient(circle at 85% 25%, rgba(255, 255, 255, 0.5) 1px, transparent 2px),
+    radial-gradient(circle at 25% 85%, rgba(255, 255, 255, 0.4) 1px, transparent 2px),
+    radial-gradient(circle at 45% 15%, rgba(255, 255, 255, 0.3) 1px, transparent 2px),
+    radial-gradient(circle at 95% 55%, rgba(255, 255, 255, 0.5) 1px, transparent 2px),
+    radial-gradient(circle at 65% 45%, rgba(255, 255, 255, 0.4) 1px, transparent 2px),
+    radial-gradient(circle at 35% 75%, rgba(255, 255, 255, 0.3) 1px, transparent 2px);
+  background-size: 200px 200px;
+  animation: bubblesAscendSlow 20s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes bubblesAscendSlow {
+  0% {
+    transform: translateY(100%);
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0.2;
+  }
+}
+
+/* 2) FONDO MESOPÉLAGICO – BURBUJAS (manteniendo el original pero reduciendo opacidad) */
 .ocean-mid {
   background: linear-gradient(#003f7d, #001a33);
   overflow: auto;
+  position: relative;
 }
 
 .ocean-mid::before {
@@ -56,10 +136,10 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-
-  background-image: radial-gradient(circle, rgba(255,255,255,0.2) 2px, transparent 2px);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.15) 2px, transparent 2px);
   background-size: 40px 40px;
   animation: bubblesUp 14s infinite linear;
+  opacity: 0.7;
 }
 
 @keyframes bubblesUp {
@@ -67,9 +147,12 @@ body {
   100% { transform: translateY(-50%); }
 }
 
+/* El resto del CSS permanece igual... */
+
 /* 3) FONDO PROFUNDO – CORRIENTES HORIZONTALES */
 .ocean-deep {
   background: radial-gradient(circle at center, #001428, #000814);
+  position: relative;
 }
 
 .ocean-deep::after {
@@ -93,6 +176,26 @@ body {
   100% { transform: translateX(-50%); }
 }
 
+/* 4) FONDO ABISAL – PARTÍCULAS */
+.ocean-abyss {
+  background: #000a14;
+  position: relative;
+}
+
+.ocean-abyss::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: particlesDrift 18s ease-in-out infinite alternate;
+}
+
+@keyframes particlesDrift {
+  0% { transform: translate(-5%, -5%); opacity: 0.3; }
+  100% { transform: translate(5%, 5%); opacity: 0.15; }
+}
 /* 4) FONDO ABISAL – PARTÍCULAS */
 .ocean-abyss {
   background: #000a14;
