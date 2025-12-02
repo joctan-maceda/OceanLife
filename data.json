@@ -121,6 +121,14 @@
       "modelo": "assets/models/tiburonballena.glb"
     },
     {
+      "nombre": "Carpa",
+      "descripcion": "Famoso pez naranja con rayas blancas que vive en anémonas.",
+      "profundidad": 15,
+      "imagen": "assets/img/pez_payaso.jpg",
+      "audio": "assets/audio/pez_payaso.mp3",
+      "modelo": "assets/models/pez_payaso.glb"
+    },
+    {
       "nombre": "Tortuga marina verde",
       "descripcion": "Uno de los reptiles marinos más antiguos del planeta.",
       "profundidad": 30,
@@ -168,7 +176,7 @@
       "profundidad": 10,
       "imagen": "assets/img/caballito_mar.jpg",
       "audio": "assets/audio/caballito_mar.mp3",
-      "modelo": "assets/models/caballito_mar.glb"
+      "modelo": "assets/models/caballito.glb"
     },
     {
       "nombre": "Manta raya gigante",
@@ -192,7 +200,7 @@
     "profundidad": 1000,
     "imagen": "assets/img/calamar.jpg",
     "audio": "assets/audio/calamar.mp3",
-    "modelo": "assets/models/coral.glb"
+    "modelo": "assets/models/calamar.glb"
   },
     {
       "nombre": "Narval",
