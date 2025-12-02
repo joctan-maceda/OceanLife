@@ -12,16 +12,10 @@
     "descripcion": "Depredador poderoso que habita en aguas medias.",
     "profundidad": 200,
     "imagen": "assets/img/tiburon.jpg",
-    "audio": "assets/audio/tiburon.mp3"
-  },
-  {
-    "nombre": "Calamar gigante",
-    "descripcion": "Criatura misteriosa del océano profundo.",
-    "profundidad": 1000,
-    "imagen": "assets/img/calamar.jpg",
-    "audio": "assets/audio/calamar.mp3",
-    "modelo": "assets/models/coral.glb"
-  },
+    "audio": "assets/audio/tiburon.mp3",
+    "modelo": "assets/models/tiburon.glb"
+    },
+  
   {
       "nombre": "Tiburón martillo",
       "descripcion": "Tiburón con cabeza en forma de martillo y excelente visión.",
@@ -47,12 +41,84 @@
       "modelo": "assets/models/pez_angel.glb"
     },
     {
-      "nombre": "Pez payaso",
-      "descripcion": "Famoso pez naranja con rayas blancas que vive en anémonas.",
+  "nombre": "Medusa Scyphozoa",
+  "descripcion": "Las Scyphozoa son medusas verdaderas, conocidas por su cuerpo gelatinoso en forma de campana y tentáculos urticantes. Habitan desde aguas superficiales hasta profundidades medias.",
+  "profundidad": 200,
+  "imagen": "assets/img/scyphozoa.jpg",
+  "audio": "assets/audio/scyphozoa.mp3",
+  "modelo": "assets/models/scyphozoa.glb"
+},
+    {
+      "nombre": "Ballena jorobada",
+      "descripcion": "Un animal melodioso y que ama las aguas heladas.",
+      "profundidad": 500,
+      "imagen": "assets/img/ballena_jorobada.jpg",
+      "audio": "assets/audio/ballena_azul.mp3",
+      "modelo": "assets/models/ballenajorobada.glb"
+    },
+    {
+      "nombre": "Cachalote",
+      "descripcion": "Ballena dentada famosa por su enorme cabeza.",
+      "profundidad": 4000,
+      "imagen": "assets/img/cachalote.jpg",
+      "audio": "assets/audio/cachalote.mp3",
+      "modelo": "assets/models/cachalote.glb"
+    },
+    {
+      "nombre": "Cangrejo araña gigante",
+      "descripcion": "El artrópodo marino más grande del mundo.",
+      "profundidad": 600,
+      "imagen": "assets/img/cangrejo_araña_gigante.jpg",
+      "audio": "assets/audio/cangrejo_gigante.mp3",
+      "modelo": "assets/models/cangrejo.glb"
+    },
+    {
+      "nombre": "Pez globo",
+      "descripcion": "Pez que se infla para defenderse.",
+      "profundidad": 30,
+      "imagen": "assets/img/pez_globo.jpg",
+      "audio": "assets/audio/pez_globo.mp3",
+      "modelo": "assets/models/pezglobo.glb"
+    },
+    {
+      "nombre": "Pez mariposa",
+      "descripcion": "Colorido y pequeño, común en arrecifes.",
+      "profundidad": 10,
+      "imagen": "assets/img/pez_mariposa.jpg",
+      "audio": "assets/audio/pez_mariposa.mp3",
+      "modelo": "assets/models/pezmariposa.glb"
+    },
+    {
+      "nombre": "Pez de San Pedro",
+      "descripcion": "Es un pez semigraso y de agua salada que habita en fondos de rocas, praderas submarinas y arenas, donde puede enterrarse temporalmente.",
+      "profundidad": 10,
+      "imagen": "assets/img/pez_sanpedro.jpg",
+      "audio": "assets/audio/pez_mariposa.mp3",
+      "modelo": "assets/models/pezsanpedro.glb"
+    },
+    {
+      "nombre": "Raya Diablo",
+      "descripcion": "Las rayas diablo, una especie similar a la manta raya que vive en los océanos cálidos y templados.",
+      "profundidad": 10,
+      "imagen": "assets/img/rayadiablo.jpg",
+      "audio": "assets/audio/pez_mariposa.mp3",
+      "modelo": "assets/models/ralladiablo.glb"
+    },
+    {
+      "nombre": "Pez Rape",
+      "descripcion": "Es un pez demersal que habita en aguas profundas y frías del Atlántico norte, el mar Mediterráneo y el mar Negro.",
       "profundidad": 15,
-      "imagen": "assets/img/pez_payaso.jpg",
+      "imagen": "assets/img/rape.jpg",
       "audio": "assets/audio/pez_payaso.mp3",
-      "modelo": "assets/models/pez_payaso.glb"
+      "modelo": "assets/models/rape.glb"
+    },
+    {
+      "nombre": "Tiburon Ballena",
+      "descripcion": "Es el pez existente más grande del mundo, con una longitud que puede alcanzar hasta 18 metros y un peso de más de 20 toneladas.",
+      "profundidad": 15,
+      "imagen": "assets/img/tiburonballena.jpg",
+      "audio": "assets/audio/pez_payaso.mp3",
+      "modelo": "assets/models/tiburonballena.glb"
     },
     {
       "nombre": "Tortuga marina verde",
@@ -60,16 +126,17 @@
       "profundidad": 30,
       "imagen": "assets/img/tortuga_verde.jpg",
       "audio": "assets/audio/tortuga_verde.mp3",
-      "modelo": "assets/models/tortuga_verde.glb"
+      "modelo": "assets/models/tortuga.glb"
     },
     {
-      "nombre": "Tiburón blanco",
-      "descripcion": "Depredador apex conocido por su velocidad y fuerza.",
-      "profundidad": 200,
-      "imagen": "assets/img/tiburon_blanco.jpg",
-      "audio": "assets/audio/tiburon_blanco.mp3",
-      "modelo": "assets/models/tiburon_blanco.glb"
+      "nombre": "Pez payaso",
+      "descripcion": "Famoso pez naranja con rayas blancas que vive en anémonas.",
+      "profundidad": 15,
+      "imagen": "assets/img/pez_payaso.jpg",
+      "audio": "assets/audio/pez_payaso.mp3",
+      "modelo": "assets/models/pez_payaso.glb"
     },
+    
     {
       "nombre": "Medusa luna",
       "descripcion": "Medusa inofensiva con apariencia transparente y luminosa.",
@@ -86,14 +153,6 @@
       "imagen": "assets/img/ballena_azul.jpg",
       "audio": "assets/audio/ballena_azul.mp3",
       "modelo": "assets/models/ballena_azul.glb"
-    },
-    {
-      "nombre": "Delfín nariz de botella",
-      "descripcion": "Mamífero inteligente conocido por su comportamiento amistoso.",
-      "profundidad": 50,
-      "imagen": "assets/img/delfin.jpg",
-      "audio": "assets/audio/delfin.mp3",
-      "modelo": "assets/models/delfin.glb"
     },
     {
       "nombre": "Pulpo común",
@@ -127,7 +186,14 @@
       "audio": "assets/audio/pez_leon.mp3",
       "modelo": "assets/models/pez_leon.glb"
     },
-    
+    {
+    "nombre": "Calamar gigante",
+    "descripcion": "Criatura misteriosa del océano profundo.",
+    "profundidad": 1000,
+    "imagen": "assets/img/calamar.jpg",
+    "audio": "assets/audio/calamar.mp3",
+    "modelo": "assets/models/coral.glb"
+  },
     {
       "nombre": "Narval",
       "descripcion": "Conocido como el unicornio del mar debido a su largo colmillo.",
@@ -168,14 +234,7 @@
       "audio": "assets/audio/pez_linterna.mp3",
       "modelo": "assets/models/pez_linterna.glb"
     },
-    {
-      "nombre": "Cangrejo araña gigante",
-      "descripcion": "El artrópodo marino más grande del mundo.",
-      "profundidad": 600,
-      "imagen": "assets/img/cangrejo_gigante.jpg",
-      "audio": "assets/audio/cangrejo_gigante.mp3",
-      "modelo": "assets/models/cangrejo_gigante.glb"
-    },
+    
     {
       "nombre": "Caracol cono",
       "descripcion": "Molusco con veneno extremadamente poderoso.",
@@ -208,14 +267,7 @@
       "audio": "assets/audio/atun.mp3",
       "modelo": "assets/models/atun.glb"
     },
-    {
-      "nombre": "Pez globo",
-      "descripcion": "Pez que se infla para defenderse.",
-      "profundidad": 30,
-      "imagen": "assets/img/pez_globo.jpg",
-      "audio": "assets/audio/pez_globo.mp3",
-      "modelo": "assets/models/pez_globo.glb"
-    },
+    
     {
       "nombre": "León marino",
       "descripcion": "Mamífero social y juguetón.",
@@ -296,14 +348,7 @@
       "audio": "assets/audio/foca_anillada.mp3",
       "modelo": "assets/models/foca_anillada.glb"
     },
-    {
-      "nombre": "Cachalote",
-      "descripcion": "Ballena dentada famosa por su enorme cabeza.",
-      "profundidad": 4000,
-      "imagen": "assets/img/cachalote.jpg",
-      "audio": "assets/audio/cachalote.mp3",
-      "modelo": "assets/models/cachalote.glb"
-    },
+    
     {
       "nombre": "Pez espada",
       "descripcion": "Pez rápido con largo pico.",
@@ -407,13 +452,6 @@
       "imagen": "assets/img/pez_fantasma.jpg",
       "audio": "assets/audio/pez_fantasma.mp3",
       "modelo": "assets/models/pez_fantasma.glb"
-    },
-    {
-      "nombre": "Pez mariposa",
-      "descripcion": "Colorido y pequeño, común en arrecifes.",
-      "profundidad": 10,
-      "imagen": "assets/img/pez_mariposa.jpg",
-      "audio": "assets/audio/pez_mariposa.mp3",
-      "modelo": "assets/models/pez_mariposa.glb"
     }
+    
 ]

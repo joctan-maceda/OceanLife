@@ -28,16 +28,10 @@
 
 
   <!-- Barra lateral -->
-  <div class="depth-bar fixed left-0 top-0 h-full w-14 
-      bg-gradient-to-b from-sky-300 to-blue-900
-      flex flex-col justify-between items-center py-4 z-20 shadow-xl cursor-pointer">
-
-    <span class="depth-option text-xs font-bold hover:scale-110" data-depth="0">0m</span>
-    <span class="depth-option text-xs font-bold hover:scale-110" data-depth="200">200m</span>
-    <span class="depth-option text-xs font-bold hover:scale-110" data-depth="1000">1000m</span>
-    <span class="depth-option text-xs font-bold hover:scale-110" data-depth="4000">4000m</span>
-    <span class="depth-option text-xs font-bold hover:scale-110" data-depth="11000">11000m</span>
+  <div id="depthBar" class="depth-bar">
+    <div id="depthIndicator" class="depth-indicator"></div>
   </div>
+
 
   <div id="modal3D" class="modal">
       <div class="modal-content">

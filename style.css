@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 
@@ -9,10 +9,8 @@ body {
   background: linear-gradient(180deg, #003459, #005b8f);
   text-align: center;
   color: white;
-  position: absolute;
+  position: sticky;
   top: 0;
-  left: 0;
-   top: 0;
   z-index: 50;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
@@ -22,10 +20,6 @@ body {
   font-size: 2.2rem;
   letter-spacing: 1px;
   margin: 0;
-}
-
-.app-header {
- 
 }
 
 .app-subtitle {
@@ -42,8 +36,8 @@ body {
 
 /* 1) FONDO SUPERFICIAL – LUZ Y ONDAS */
 .ocean-surface {
-  background: linear-gradient(#4ecbff, #0066cc);
-  animation: surfaceWaves 6s ease-in-out infinite alternate;
+  background: linear-gradient(#286985, #0066cc);
+  animation: surfaceWaves 3s ease-in-out infinite alternate;
 }
 
 @keyframes surfaceWaves {
@@ -54,16 +48,15 @@ body {
 /* 2) FONDO MESOPÉLAGICO – BURBUJAS */
 .ocean-mid {
   background: linear-gradient(#003f7d, #001a33);
-  overflow: hidden;
+  overflow: auto;
 }
 
 .ocean-mid::before {
   content: "";
   position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
+  width: 100%;
+  height: 100%;
+
   background-image: radial-gradient(circle, rgba(255,255,255,0.2) 2px, transparent 2px);
   background-size: 40px 40px;
   animation: bubblesUp 14s infinite linear;
@@ -88,9 +81,9 @@ body {
   left: 0;
   background: linear-gradient(
     90deg,
-    rgba(0, 40, 80, 0.2) 0%,
+    rgba(47, 76, 104, 0.2) 0%,
     rgba(0, 0, 0, 0) 50%,
-    rgba(0, 40, 80, 0.2) 100%
+    rgba(6, 53, 100, 0.2) 100%
   );
   animation: deepCurrents 20s linear infinite;
 }
@@ -108,8 +101,8 @@ body {
 .ocean-abyss::before {
   content: "";
   position: absolute;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
   background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
   background-size: 30px 30px;
   animation: particlesDrift 18s easy infinite alternate;
@@ -197,4 +190,65 @@ body {
 model-viewer {
   width: 100%;
   height: 100%;
+}
+
+
+/* Barra lateral de profundidad */
+.depth-bar {
+  position: fixed;
+  top: 200px; /* evita que se esconda debajo del header */
+  left: 10px;
+  width: 50px;
+  height: calc(100vh - 85px);
+  background: linear-gradient(#4FC3F7, #01579B);
+  border-radius: 25px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 100;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Indicador de profundidad */
+.depth-indicator {
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  border-radius: 10px;
+  margin-left: 0;
+  transition: transform 0.3s ease-out;
+}
+
+/* Números en la barra */
+.depth-bar::before {
+  content: "0m";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+}
+
+.depth-bar::after {
+  content: "4000m";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Celular */
+@media(max-width: 768px) {
+  .depth-bar {
+    width: 40px;
+    left: 5px;
+  }
 }

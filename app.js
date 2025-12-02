@@ -62,16 +62,54 @@ document.getElementById("prevBtn").addEventListener("click", () => {
   if (currentIndex > 0) showCard(currentIndex - 1);
 });
 
-
+/////////////////////////////////////////////////////////////////////////
 // Barra lateral por profundidad
-document.querySelectorAll(".depth-option").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const depth = Number(btn.getAttribute("data-depth"));
-    const index = animals.findIndex(a => a.profundidad >= depth);
-    if (index !== -1) showCard(index);
-  });
+/////////////////////////////////////////////////////////////////////////
 
+const depthBar = document.getElementById("depthBar");
+const depthIndicator = document.getElementById("depthIndicator");
+
+// Permite profundidades reales del océano
+const MAX_DEPTH = 4000;
+
+depthBar.addEventListener("click", (event) => {
+    const rect = depthBar.getBoundingClientRect();
+
+    // Posición del click en porcentaje (0 = arriba, 1 = abajo)
+    const y = (event.clientY - rect.top) / rect.height;
+
+    const targetDepth = Math.floor(y * MAX_DEPTH);
+
+    moveIndicator(y);
+    goToDepth(targetDepth); 
 });
+
+// Mueve la línea blanca (indicador)
+function moveIndicator(relativeY) {
+    const barHeight = depthBar.offsetHeight;
+    const finalY = relativeY * (barHeight - 10); 
+    depthIndicator.style.transform = `translateY(${finalY}px)`;
+}
+
+// Cambia a la carta del animal más cercano a la profundidad dada
+function goToDepth(depthRequested) {
+    let bestIndex = 0;
+    let bestDiff = Infinity;
+
+    animales.forEach((a, i) => {
+        let d = Math.abs(a.profundidad - depthRequested);
+        if (d < bestDiff) {
+            bestDiff = d;
+            bestIndex = i;
+        }
+    });
+
+    currentIndex = bestIndex;
+    mostrarAnimal(currentIndex);
+}
+
+
+
 
  /* Modal visor 3D */
 function open3D(path) {
