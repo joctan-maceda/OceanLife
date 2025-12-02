@@ -65,50 +65,52 @@ document.getElementById("prevBtn").addEventListener("click", () => {
 /////////////////////////////////////////////////////////////////////////
 // Barra lateral por profundidad
 /////////////////////////////////////////////////////////////////////////
+const depthBar = document.getElementById("depth-bar");
+const indicator = document.getElementById("depth-indicator");
+const depthValue = document.getElementById("depth-value");
 
-const depthBar = document.getElementById("depthBar");
-const depthIndicator = document.getElementById("depthIndicator");
-
-// Permite profundidades reales del océano
 const MAX_DEPTH = 4000;
 
-depthBar.addEventListener("click", (event) => {
-    const rect = depthBar.getBoundingClientRect();
+depthBar.addEventListener("click", function (event) {
 
-    // Posición del click en porcentaje (0 = arriba, 1 = abajo)
-    const y = (event.clientY - rect.top) / rect.height;
+  const rect = depthBar.getBoundingClientRect();
+  const y = event.clientY - rect.top;
+  const barHeight = rect.height;
 
-    const targetDepth = Math.floor(y * MAX_DEPTH);
+  const half = indicator.offsetHeight / 2;
 
-    moveIndicator(y);
-    goToDepth(targetDepth); 
+  let pos = y - half;
+  if (pos < 0) pos = 0;
+  if (pos > barHeight - indicator.offsetHeight)
+    pos = barHeight - indicator.offsetHeight;
+
+  indicator.style.top = pos + "px";
+
+  // Transformar posición a profundidad
+  const depth = Math.round((pos / (barHeight - indicator.offsetHeight)) * MAX_DEPTH);
+  depthValue.style.top = pos + "px";
+  depthValue.textContent = depth + " m";
+
+  // Mostrar carta más parecida a la profundidad
+  goToDepth(depth);
 });
 
-// Mueve la línea blanca (indicador)
-function moveIndicator(relativeY) {
-    const barHeight = depthBar.offsetHeight;
-    const finalY = relativeY * (barHeight - 10); 
-    depthIndicator.style.transform = `translateY(${finalY}px)`;
+function goToDepth(depth) {
+  if (!animals.length) return;
+
+  let bestIndex = 0;
+  let bestDiff = Infinity;
+
+  animals.forEach((a, i) => {
+    const diff = Math.abs(a.profundidad - depth);
+    if (diff < bestDiff) {
+      bestDiff = diff;
+      bestIndex = i;
+    }
+  });
+
+  showCard(bestIndex);
 }
-
-// Cambia a la carta del animal más cercano a la profundidad dada
-function goToDepth(depthRequested) {
-    let bestIndex = 0;
-    let bestDiff = Infinity;
-
-    animales.forEach((a, i) => {
-        let d = Math.abs(a.profundidad - depthRequested);
-        if (d < bestDiff) {
-            bestDiff = d;
-            bestIndex = i;
-        }
-    });
-
-    currentIndex = bestIndex;
-    mostrarAnimal(currentIndex);
-}
-
-
 
 
  /* Modal visor 3D */

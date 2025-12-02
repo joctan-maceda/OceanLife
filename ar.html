@@ -10,7 +10,7 @@
 <body style="margin:0; overflow:hidden">
 
   <a-scene embedded arjs="trackingMethod: best;">
-      <a-marker type="pattern" url="pattern-qr.patt">
+      <a-marker type="pattern" url="AR/pattern-qr.patt">
           <a-entity id="model" position="0 0 0" scale="0.5 0.5 0.5"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
@@ -19,6 +19,7 @@
   <script>
       const params = new URLSearchParams(window.location.search);
       const model = params.get("model");
+      console.log(params.get("model"));
       document.getElementById("model").setAttribute("gltf-model", "url(" + model + ")");
   </script>
 
